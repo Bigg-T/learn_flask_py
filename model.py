@@ -1,9 +1,10 @@
 from passlib.hash import sha256_crypt
+from IModel import IModel
 
 # from data import Articles
 from dbconfig import init_mysql
 
-class AppModel:
+class AppModel(IModel):
     """docstring for ."""
     def __init__(self, app, name='testing_flask_app'):
         self.arg = app
